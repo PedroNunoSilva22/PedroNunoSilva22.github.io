@@ -29,7 +29,7 @@ $(function() {
 
 for (var i = 1; i < 9; i++) {
 	new Vivus('s'+i+'', {
-			file: 'images/ai-0'+i+'.svg',
+			file: 'images/ai'+i+'.svg',
 			onReady: function (myVivus) {
     // `el` property is the SVG element
   // myVivus.el.setAttribute('width', '90%');
