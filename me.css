@@ -57,7 +57,7 @@ body {
 hr {
   align: center;
   display: block;
-  width: 30%;
+  width: 50%;
   color: #0000ff;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
@@ -105,7 +105,7 @@ hr {
   text-align: center;
   text-decoration: none; }
 
-.work, .skills {
+.skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
