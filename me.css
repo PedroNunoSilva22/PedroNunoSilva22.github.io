@@ -1,0 +1,227 @@
+@font-face {
+  font-family: Space;
+  src: url(spaceMono-Regular.ttf); }
+body {
+  background-color: #fdccca;
+  font-family: Space Mono, monospace;
+  font-size: 50%;
+  color: #0000ff; }
+
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: url(images/loader.gif) center no-repeat #0000ff; }
+
+.container {
+  position: absolute;
+  display: none;
+  grid-template: ". main ." auto ". main ." auto "footer footer footer" auto/20% auto 20%;
+  justify-content: center;
+  align-content: center; }
+
+.euPic {
+  width: 140px;
+  border-radius: 50%;
+  height: 140px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 255, 0.9);
+  background-size: cover;
+  background-position: 80% 20%;
+  background-image: url(images/me3.JPG); }
+
+.about {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-items: center;
+  align-items: center; }
+
+.name, .title {
+  font-size: 400%;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; }
+
+hr {
+  align: center;
+  display: block;
+  width: 30%;
+  color: #0000ff;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px; }
+
+.pro {
+  font-size: 250%;
+  text-align: center; }
+
+.local {
+  font-size: 200%;
+  text-align: center;
+  margin: 0; }
+
+.main {
+  font-weight: bold;
+  margin: 0;
+  font-size: 220%;
+  text-align: center; }
+
+.date {
+  font-size: 150%;
+  text-align: center; }
+
+.place {
+  font-size: 140%;
+  text-align: center; }
+
+.intro {
+  font-size: 300%;
+  text-align: left; }
+
+.at {
+  font-size: 300%;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; }
+
+.Seework {
+  font-size: 500%;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; }
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.w, .w1, .w2, .w3, .w4, .w5, .w6 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-blend-mode: screen;
+  background-color: rgba(0, 0, 255, 0.9);
+  background-size: cover; }
+
+.w:hover, .w1:hover, .w2:hover, .w3:hover, .w4:hover, .w5:hover, .w6:hover {
+  background-blend-mode: normal; }
+
+.w1 {
+  background-image: url(images/1.jpg); }
+
+.w2 {
+  background-image: url(images/2.jpg); }
+
+.w3 {
+  background-image: url(images/3.jpg); }
+
+.w4 {
+  background-image: url(images/4.jpg); }
+
+.w5 {
+  background-image: url(images/5.jpg); }
+
+.w6 {
+  background-image: url(images/6.jpg); }
+
+.contacts {
+  justify-self: center;
+  align-self: center;
+  grid-row: 3/4;
+  grid-column: 1/4;
+  justify-items: center;
+  align-items: center;
+  font-size: 200%;
+  text-align: center; }
+  .contacts a {
+    width: 100px; }
+
+@media only screen and (max-width: 720px) {
+  .about {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    justify-items: center;
+    align-items: center;
+    padding: 10%; }
+
+  .intro {
+    font-size: 200%;
+      font-size-grid-row: 2/3;
+    grid-column: 1/4; } }
+.header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 2;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transition: height 0.6s;
+  -moz-transition: height 0.6s;
+  transition: height 0.6s;
+  text-align: center;
+  line-height: 80vh;
+  background-image: url(images/me2.jpg);
+  background-color: rgba(0, 0, 255, 0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s; }
+
+.bold {
+  font-size: 1200%;
+  line-height: 75vh;
+  font-weight: bold;
+  font-style: italic;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s; }
+
+.header.shrink {
+  height: 50px;
+  line-height: 5px;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s; }
+
+.bold.shrink {
+  line-height: 5px;
+  font-size: 300%;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s; }
+
+.touchs {
+  z-index: 4;
+  color: white;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 30vh;
+  font-size: 300%;
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=me.css.map */
